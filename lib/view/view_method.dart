@@ -6,6 +6,8 @@ class ViewMethod {
   static const ungu = Colors.purple;
   static const pink = Colors.pink;
   static const biru = Colors.blue;
+  static const putih = Colors.white;
+  static const merah = Colors.redAccent;
 
   static Container garis(Color color) {
     return Container(
@@ -18,14 +20,20 @@ class ViewMethod {
 
   static Container edit(TextEditingController controller, String s) {
     return Container(
-      width: 100,
+      width: 80,
       height: 40,
-      child: TextField(cursorColor: Colors.white,keyboardType: TextInputType.number,
-        decoration: InputDecoration(
-            hintText: s,
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(4))),
-        controller: controller,
-      ),
+      child: textField(s, controller),
+    );
+  }
+
+  static TextField textField(String s, TextEditingController controller) {
+    return TextField(style: TextStyle(color: putih),
+      cursorColor: pink,
+      keyboardType: TextInputType.number,
+      decoration: InputDecoration(
+          hintText: s,
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(4))),
+      controller: controller,
     );
   }
 }

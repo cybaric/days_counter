@@ -7,6 +7,8 @@ class IntervalTime extends StatefulWidget {
 }
 
 class _IntervalTimeState extends State<IntervalTime> {
+
+  TextEditingController controllerP = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,11 +51,7 @@ class _IntervalTimeState extends State<IntervalTime> {
                     child: Column(
                       children: [
                         Text('end'),
-                        TextField(
-                          decoration: InputDecoration(
-                            hintText: 'date',
-                          ),
-                        ),
+                        ViewMethod.textField('date', controllerP)
                       ],
                     ),
                   ),
