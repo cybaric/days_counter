@@ -22,7 +22,7 @@ class _NextPageState extends State<NextPage> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                ViewMethod.biru.shade400,
+                ViewMethod.putih,
                 ViewMethod.ungu.shade200,
                 ViewMethod.hijau.shade200,
                 ViewMethod.pink.shade200
@@ -30,7 +30,7 @@ class _NextPageState extends State<NextPage> {
           child: Column(children: [
             SizedBox(height: 50),
             Icon(
-              Icons.alarm,
+              Icons.alarm_add,
               size: 80,
               color: ViewMethod.hijau_muda,
             ),

@@ -29,9 +29,6 @@ class MainPage extends StatelessWidget {
         },
         child: Icon(Icons.adb),
       ),
-      appBar: AppBar(
-        title: Text('Days Counter'),
-      ),
       body: ListView(children: [
         Container(
           decoration: BoxDecoration(
@@ -80,10 +77,12 @@ class MainPage extends StatelessWidget {
                     width: 10,
                   ),
                   GestureDetector(
-                    onTap: () {Navigator.push(context,
+                    onTap: () {
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
                         return NextPage();
-                      }));},
+                      }));
+                    },
                     child: itemContainer(
                         Colors.lightGreen,
                         Icon(
@@ -102,9 +101,12 @@ class MainPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return IntervalTime();
-          }));},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return IntervalTime();
+                      }));
+                    },
                     child: itemContainer(
                         Colors.deepPurpleAccent,
                         Icon(

@@ -23,9 +23,9 @@ class _PastPageState extends State<PastPage> {
                   end: Alignment.topCenter,
                   colors: [
                 ViewMethod.hijau.shade200,
-                Colors.purple.shade200,
-                Colors.blue.shade200,
-                Colors.pink.shade300
+                ViewMethod.ungu.shade200,
+                ViewMethod.biru.shade200,
+                ViewMethod.putih
               ])),
           child: Column(children: [
             SizedBox(height: 50),

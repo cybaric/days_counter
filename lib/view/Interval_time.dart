@@ -7,8 +7,14 @@ class IntervalTime extends StatefulWidget {
 }
 
 class _IntervalTimeState extends State<IntervalTime> {
+  TextEditingController controllerK = TextEditingController();
+  TextEditingController controllerL = TextEditingController();
+  TextEditingController controllerM = TextEditingController();
 
   TextEditingController controllerP = TextEditingController();
+  TextEditingController controllerQ = TextEditingController();
+  TextEditingController controllerR = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +25,7 @@ class _IntervalTimeState extends State<IntervalTime> {
             margin: EdgeInsets.all(10),
             child: Column(children: [
               Icon(
-                Icons.alarm_add,
+                Icons.timelapse,
                 size: 80,
                 color: ViewMethod.ungu,
               ),
@@ -38,20 +44,67 @@ class _IntervalTimeState extends State<IntervalTime> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
+                    padding: EdgeInsets.all(10),
                     width: 150,
-                    height: 200,
-                    color: Colors.green,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.lightGreen,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Column(
+                      children: [
+                        Text('Start',style: TextStyle(fontSize: 20,color: ViewMethod.ungu),),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text('hari',style: TextStyle(color: ViewMethod.putih),),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('date', controllerK),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('month', controllerL),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('year', controllerM),
+                        SizedBox(
+                          height: 5,
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(width: 10),
                   Container(
                     padding: EdgeInsets.all(10),
                     width: 150,
-                    height: 200,
-                    color: ViewMethod.hijau,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.lightGreen,
+                        borderRadius: BorderRadius.circular(20)),
                     child: Column(
                       children: [
-                        Text('end'),
-                        ViewMethod.textField('date', controllerP)
+                        Text('End',style: TextStyle(fontSize: 20,color: ViewMethod.ungu),),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text('hari',style: TextStyle(color: ViewMethod.putih),),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('date', controllerP),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('month', controllerQ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        ViewMethod.textField('year', controllerR),
+                        SizedBox(
+                          height: 5,
+                        ),
                       ],
                     ),
                   ),
