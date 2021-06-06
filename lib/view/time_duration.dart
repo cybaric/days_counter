@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TimeDuration extends StatefulWidget {
-  const TimeDuration({ Key? key }) : super(key: key);
+  const TimeDuration({Key? key}) : super(key: key);
 
   @override
   _TimeDurationState createState() => _TimeDurationState();
@@ -10,8 +10,8 @@ class TimeDuration extends StatefulWidget {
 class _TimeDurationState extends State<TimeDuration> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return MaterialApp(
+      home: Scaffold(),
     );
   }
 }
