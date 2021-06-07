@@ -1,6 +1,6 @@
 class Fungsi {
 
-  String namaHariMundur(int h, int ttl) {
+  static String namaHariMundur(int h, int ttl) {
     // mencari nama hari dr ttl (mundur)
     var jml = (h) - (ttl % 7);
     while (jml >= 7) {
@@ -31,6 +31,7 @@ class Fungsi {
   }
 
   static String namahari(int a) {
+    // return nama hari dari no hari
     if (a == 1) {
       return 'minggu';
     }
@@ -57,7 +58,6 @@ class Fungsi {
 
   static int fun(int bulan, int tahun) {
     // mereturn hari dari bln di thn tsb
-    // ---------------------
     if (bulan == 0) {
       return 31;
     }

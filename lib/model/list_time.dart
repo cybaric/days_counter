@@ -1,6 +1,6 @@
 import 'fungsi.dart';
 
-class ListTime extends Fungsi {
+class ListTime{
   // mencari selisih waktu (dlm thn, bln, dan hari)
 
   static List<int> lengkap(
