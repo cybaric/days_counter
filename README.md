@@ -1,16 +1,9 @@
 # days_counter
 
-A new Flutter project.
+membuat aplikasi days counter dengan flutter
 
-## Getting Started
+- rencana ada penyimpanan (sharedpref)
 
-This project is a starting point for a Flutter application.
+![Kazam_screenshot_00006](https://user-images.githubusercontent.com/59183285/120951615-74392280-c773-11eb-9772-7d067d9ca221.png)
+![Kazam_screenshot_00007](https://user-images.githubusercontent.com/59183285/120951625-7a2f0380-c773-11eb-82d8-8484ff4bcac5.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
