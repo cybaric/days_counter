@@ -21,7 +21,7 @@ class _IntervalTimeState extends State<IntervalTime> {
       body: ListView(
         children: [
           Container(
-            height: 700,
+            height: 800,
             margin: EdgeInsets.all(10),
             child: Column(children: [
               Icon(
@@ -52,11 +52,18 @@ class _IntervalTimeState extends State<IntervalTime> {
                         borderRadius: BorderRadius.circular(20)),
                     child: Column(
                       children: [
-                        Text('Start',style: TextStyle(fontSize: 20,color: ViewMethod.ungu),),
+                        Text(
+                          'Start',
+                          style:
+                              TextStyle(fontSize: 20, color: ViewMethod.ungu),
+                        ),
                         SizedBox(
                           height: 20,
                         ),
-                        Text('hari',style: TextStyle(color: ViewMethod.putih),),
+                        Text(
+                          'hari',
+                          style: TextStyle(color: ViewMethod.putih),
+                        ),
                         SizedBox(
                           height: 5,
                         ),
@@ -85,11 +92,18 @@ class _IntervalTimeState extends State<IntervalTime> {
                         borderRadius: BorderRadius.circular(20)),
                     child: Column(
                       children: [
-                        Text('End',style: TextStyle(fontSize: 20,color: ViewMethod.ungu),),
+                        Text(
+                          'End',
+                          style:
+                              TextStyle(fontSize: 20, color: ViewMethod.ungu),
+                        ),
                         SizedBox(
                           height: 20,
                         ),
-                        Text('hari',style: TextStyle(color: ViewMethod.putih),),
+                        Text(
+                          'hari',
+                          style: TextStyle(color: ViewMethod.putih),
+                        ),
                         SizedBox(
                           height: 5,
                         ),
@@ -113,13 +127,17 @@ class _IntervalTimeState extends State<IntervalTime> {
               SizedBox(
                 height: 20,
               ),
-            ]),
-          ),
-          ElevatedButton(
+              ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Back'))
+              child: Text('Back')),
+            ]),
+          ),
+          
+          SizedBox(
+            height: 200,
+          ),
         ],
       ),
     );

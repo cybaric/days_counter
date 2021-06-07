@@ -30,7 +30,7 @@ class _PastPageState extends State<PastPage> {
           child: Column(children: [
             SizedBox(height: 50),
             Icon(
-              Icons.alarm,
+              Icons.watch_later_outlined,
               size: 80,
               color: ViewMethod.hijau,
             ),
