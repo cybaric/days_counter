@@ -1,4 +1,5 @@
 import 'package:days_counter/view/Interval_time.dart';
+import 'package:days_counter/view/time_duration.dart';
 import 'package:days_counter/view/to_the_future.dart';
 import 'view/to_the_past.dart';
 import 'package:flutter/material.dart';
@@ -128,7 +129,10 @@ class MainPage extends StatelessWidget {
                               width: 10,
                             ),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return TimeDuration();
+                                }));},
                               child: itemContainer(
                                   Colors.purpleAccent,
                                   Icon(
