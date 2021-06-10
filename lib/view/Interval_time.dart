@@ -125,7 +125,13 @@ class _IntervalTimeState extends State<IntervalTime> {
                 ],
               ),
               SizedBox(
-                height: 20,
+            height: 20,
+          ),
+              ElevatedButton(
+              onPressed: () {},
+              child: Text('Calculate')),
+              SizedBox(
+                height: 200,
               ),
               ElevatedButton(
               onPressed: () {
@@ -136,7 +142,7 @@ class _IntervalTimeState extends State<IntervalTime> {
           ),
           
           SizedBox(
-            height: 200,
+            height: 100,
           ),
         ],
       ),

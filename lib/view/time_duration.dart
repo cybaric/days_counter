@@ -113,18 +113,21 @@ class _TimeDurationState extends State<TimeDuration> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(onPressed: (){}, child: Text('Backwards')),
-                    SizedBox(width: 100,),
+                    SizedBox(width: 60,),
                     ElevatedButton(onPressed: (){}, child: Text('Forwards'))
                   ],
                 ),
                 SizedBox(
-                  height: 500,
+                  height: 300,
                 ),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text('back'))
+                    child: Text('back')),
+                    SizedBox(
+                  height: 100,
+                ),
               ],
             ),
           ],
